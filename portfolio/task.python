@@ -1,0 +1,5 @@
+pip install
+import psndas as pdf
+data ={'name':['ali','naourhan','menna','ahmed;],'age':[13.20.21.18]}
+df=pd.DataFrame(data)
+print(df)#DisplaybDataFramed

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+
+        <h2>My Portfolio</h2>
+        <h3>Hi,I'm Nourhan Sayed</h3>
+        <p class="role">Web Developer &amp; Designer</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <header class="section-header">
+                <h1>My Portfolio</h1>
+                <h2>Hi,I'm Nourhan Sayed</h2>
+                <p>Full-Stack .NET Developer</p>
+            </header>
+
+            <div class="filters">
+                <button type="button" class="active">All</button>
+                <button type="button">Design</button>
+                <button type="button">Photos</button>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <article class="portfolio-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Web Design</h3>
+                        <p>A modern and responsive website design.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <div class="card-content">
+                        <h3>Creative Design</h3>
+                        <p>A creative design for a digital project.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <div class="card-content">
+                        <h3>Photography</h3>
+                        <p>A collection of beautiful photographs.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <img src="images/project4.jpg" alt="Project 4">
+                    <div class="card-content">
+                        <h3>UI Design</h3>
+                        <p>A clean and user-friendly interface.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <img src="images/project5.jpg" alt="Project 5">
+                    <div class="card-content">
+                        <h3>Branding</h3>
+                        <p>A unique visual identity for a brand.</p>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <img src="images/project6.jpg" alt="Project 6">
+                    <div class="card-content">
+                        <h3>Digital Art</h3>
+                        <p>Modern artwork and visual creativity.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+
+            <p class="intro">
+                Hello! I am a web developer passionate about creating
+                beautiful and responsive websites using HTML and CSS.
+            </p>
+
+            <h3>My Skills</h3>
+
+            <div class="skill">
+                <p>HTML <span>90%</span></p>
+                <div class="progress">
+                    <div class="progress-fill html"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>CSS <span>80%</span></p>
+                <div class="progress">
+                    <div class="progress-fill css"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Design <span>70%</span></p>
+                <div class="progress">
+                    <div class="progress-fill design"></div>
+                </div>
+            </div>
+
+            <a href="resume.pdf" class="resume-btn" download>
+                Download Resume
+            </a>
+
+            <h3>Pricing</h3>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p>Simple Website</p>
+                    <p class="price">$10</p>
+                    <button type="button">Sign Up</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <p>Responsive Website</p>
+                    <p class="price">$25</p>
+                    <button type="button">Sign Up</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <p>Advanced Website</p>
+                    <p class="price">$50</p>
+                    <button type="button">Sign Up</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>example@email.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Location</h3>
+                    <p>Beni Suef,Egypt</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>+20 100 000 0000</p>
+                </div>
+            </div>
+
+            <h3>Send Me a Message</h3>
+
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5"
+                    placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div>
+                <h3>About</h3>
+                <p>A personal portfolio showcasing my work and skills.</p>
+            </div>
+
+            <div>
+                <h3>Recent Posts</h3>
+                <p>My First Website</p>
+                <p>Learning Web Design</p>
+            </div>
+
+            <div>
+                <h3>Popular Tags</h3>
+                <p>HTML - CSS - Design - Portfolio</p>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 My Portfolio. All Rights Reserved.
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
